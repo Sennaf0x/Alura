@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230428 00:45:50.848" rpa="true" schemaversion="3">
+<suite id="s1" name="Primeiro Teste" source="C:\Users\senna\Documents\Projetos\Robotframework\primeiro_teste.robot">
+<test id="s1-t1" name="Abrir navegador e acessar o site do organo" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230428 00:45:51.130" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg timestamp="20230428 00:45:51.138" level="INFO">Executing: C:\Users\senna\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230428 00:45:51.130" endtime="20230428 00:45:53.796"/>
+</kw>
+<status status="PASS" starttime="20230428 00:45:51.129" endtime="20230428 00:45:53.796"/>
+</test>
+<test id="s1-t2" name="Preencher campos de formulários" line="9">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-nome</arg>
+<arg>Paulo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230428 00:45:53.800" level="INFO">Typing text 'Paulo' into text field 'id:form-nome'.</msg>
+<status status="PASS" starttime="20230428 00:45:53.798" endtime="20230428 00:45:53.960"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-cargo</arg>
+<arg>Analista</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230428 00:45:53.961" level="INFO">Typing text 'Analista' into text field 'id:form-cargo'.</msg>
+<status status="PASS" starttime="20230428 00:45:53.960" endtime="20230428 00:45:54.095"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-imagem</arg>
+<arg>https://www.pexels.com/pt-br/foto/xicara-de-cha-de-vidro-transparente-com-bebida-de-cafe-2299028/</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230428 00:45:54.096" level="INFO">Typing text 'https://www.pexels.com/pt-br/foto/xicara-de-cha-de-vidro-transparente-com-bebida-de-cafe-2299028/' into text field 'id:form-imagem'.</msg>
+<status status="PASS" starttime="20230428 00:45:54.095" endtime="20230428 00:45:54.357"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class: lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230428 00:45:54.357" level="INFO">Clicking element 'class: lista-suspensa'.</msg>
+<status status="PASS" starttime="20230428 00:45:54.357" endtime="20230428 00:45:54.434"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//option[contains(.,'Programação')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230428 00:45:54.434" level="INFO">Clicking element '//option[contains(.,'Programação')]'.</msg>
+<status status="PASS" starttime="20230428 00:45:54.434" endtime="20230428 00:45:54.479"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230428 00:46:04.527" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230428 00:45:54.480" endtime="20230428 00:46:04.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230428 00:46:04.528" level="INFO">Clicking element 'form-botao'.</msg>
+<status status="PASS" starttime="20230428 00:46:04.527" endtime="20230428 00:46:04.588"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230428 00:46:04.622" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<status status="PASS" starttime="20230428 00:46:04.588" endtime="20230428 00:46:04.622"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230428 00:46:09.624" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230428 00:46:04.622" endtime="20230428 00:46:09.624"/>
+</kw>
+<status status="PASS" starttime="20230428 00:45:53.798" endtime="20230428 00:46:09.625"/>
+</test>
+<status status="PASS" starttime="20230428 00:45:50.852" endtime="20230428 00:46:09.629"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Primeiro Teste">Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
